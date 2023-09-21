@@ -29,7 +29,8 @@
         $_SESSION['username'] = $row[0];
         $_SESSION['password']= $row[1];
         echo htmlspecialchars("You are now logged in as '$row[0]'");
-        die("<p><a href='../Menu.php'>Click here to continue</a></p>");
+        die("<p><a href='../Menu.'>Click here to continue</a></p>");
+
       }
       else echo("Invalid username/password combination");
       echo"<p><a href='login.html'>Return to Login</a></p>";
