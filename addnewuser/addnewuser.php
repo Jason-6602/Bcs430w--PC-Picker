@@ -1,6 +1,7 @@
 <?php  
       // Capstone- Jason Vasquez-BCS350- I certify that this is my own original work
       // testing commit to githhub
+      // testing new branch
       require_once 'logindb.php';
       $connection = new mysqli($hn, $un, $pw, $db);
  
