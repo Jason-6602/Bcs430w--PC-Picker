@@ -1,6 +1,6 @@
 <table border=1 >
     <tr>
-    <th> BCS 350- Capstone Project : Add Records</th>
+    <th> BCS 430W PC Part Picker User Survey</th>
     </tr>
 </table>
 <br>
@@ -22,19 +22,23 @@
     <br>
   
 <!--
-Text field Forms
+Text field Forms - Need to add user survey to find out what kind of PC they require
 -->
-<h1> Please fill out the form below: </h1>
+<h1> Please fill out the Survey below: </h1>
 <br>
 <table>
     <tr>
         <form method="post" action="addrecords.php">
+
         <td>Enter FirstName </td>
         <td><input type="text" name="firstname" required></td> </tr>
+
        <tr> <td>Enter LastName: </td>
         <td><input type="text" name="lastname" required></td> </tr>
+
         <tr><td>Enter Email: </td>
         <td><input type="text" name="email" required></td></tr>
+
        <tr> <td>Enter Academic status: </td>
         <td><input type="text" name="status" required></td></tr>
        <td> (Freshman, Sophomore, Junior, Senior)</td>
