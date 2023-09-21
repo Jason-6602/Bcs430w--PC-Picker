@@ -1,10 +1,7 @@
 <?php 
   require_once 'logindb.php';
- 
+ //Testing
 
-
- 
- 
   $conn = new mysqli($hn, $un, $pw, $db);
   if ($conn->connect_error) die("Fatal Error");
 

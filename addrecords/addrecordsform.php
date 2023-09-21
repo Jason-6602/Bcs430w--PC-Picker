@@ -6,6 +6,8 @@
 <br>
 <?php
     // If user is not logged in, return to registration page...
+    // Test Test 123
+    //
 
   session_start();
   if(!isset($_SESSION['username'])) {
