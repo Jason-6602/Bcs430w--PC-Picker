@@ -1,5 +1,5 @@
 <?php  
-      // Capstone- Jason Vasquez-BCS350- I certify that this is my own original work
+      // BCS430w- Logout of the page
       //testlogin123 -Mytest123
       
      

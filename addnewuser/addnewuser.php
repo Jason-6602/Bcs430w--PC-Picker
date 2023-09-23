@@ -1,8 +1,8 @@
 <?php  
-      // Capstone- Jason Vasquez-BCS350- I certify that this is my own original work
-      // testing commit to githhub
-      // testing new branch
+      // BCS430w- Create new User and add them to the Database
+
       require_once 'logindb.php';
+      // Connect to DB
       $connection = new mysqli($hn, $un, $pw, $db);
  
       if ($connection->connect_error) die("Unable to Connect to database"); // database connection
@@ -48,8 +48,6 @@
 
   // The PHP functions
 
- 
-  
   function validate_username($field)
   {
     if ($field == "") return "No Username was entered<br>";
@@ -112,7 +110,8 @@
         return "The Email address is invalid<br>";
     return "";
   }
-  
+
+  //Protects against Injection attacks
   function fix_string($string)
   {
     if (get_magic_quotes_gpc()) $string = stripslashes($string);
