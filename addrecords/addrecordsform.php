@@ -32,10 +32,15 @@ Text field Forms - Need to add user survey to find out what kind of PC they requ
     <tr>
         <form method="post" action="addrecords.php">
 
-        <td>Enter FirstName </td>
-        <td><input type="text" name="firstname" required></td> </tr>
+        <td>What is your spending Budget? </td>
+        <td><input type="radio" id="budget1" Value="200$" required></td> </tr>
+        <input type="radio" id="budget2" value="500$">
+        <input type="radio" id="budget2" value="500$">
+        <input type="radio" id="budget2" value="500$">
 
-       <tr> <td>Enter LastName: </td>
+
+
+       <tr> <td>Do you travel frequently, or do work on the go? </td>
         <td><input type="text" name="lastname" required></td> </tr>
 
         <tr><td>Enter Email: </td>
