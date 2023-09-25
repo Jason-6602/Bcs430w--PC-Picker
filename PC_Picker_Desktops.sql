@@ -44,4 +44,3 @@ VALUES
 (D0021, HP, Envy All-in-One 32-a1015, 1799.00, PD0021, Desktop, https://www.hp.com/us-en/shop/pdp/hp-envy-all-in-one-32-a1015-9ge65av-1, S0021)
 --Budget Home Office Desktop
 (D0022, Dell, Inspiron Small Desktop, 349.99, PD0022, Desktop, https://www.dell.com/en-us/shop/desktop-computers/inspiron-small-desktop/spd/inspiron-compact-desktop-3471, S0022)
---Media Center Desktop
