@@ -4,6 +4,7 @@
     </tr>
 </table>
 <br>
+ <link rel="stylesheet" type="text/css" href="SurveyStyle.css">
 <?php
     // If user is not logged in, return to registration page...
 
