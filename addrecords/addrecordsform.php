@@ -19,9 +19,11 @@
 
 
 ?>
-<ul>
-<li><a href="../Menu.html">Main Menu</a></li>
-</ul>
+<body>
+<p>Click the Button Below to return to the Main Menu</p>
+<a href="../Menu.html">Main Menu</a>
+</body>
+
     <br>
   
 <!--

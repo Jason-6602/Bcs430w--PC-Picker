@@ -74,7 +74,7 @@ fieldset + fieldset {
 
 li {
     color: #333; /* Text color (adjust to your preference) */
-    padding: 5px 0; /* Padding for top and bottom (adjust as needed) */
+    padding: 20px; /* Padding for top and bottom (adjust as needed) */
 }
 
 p {
@@ -82,4 +82,17 @@ p {
     line-height: 1.5; /* Adjust the line height for spacing between lines */
     margin: 10px 0; /* Margin for top and bottom (adjust as needed) */
     color: #333; /* Text color (adjust to your preference) */
+}
+
+a[target="_blank"] {
+
+    text-decoration: none; /* Remove default underline */
+    color: #007BFF; /* Link text color */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Style for links on hover */
+a[target="_blank"]:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #0056b3; /* Change text color on hover */
 }
