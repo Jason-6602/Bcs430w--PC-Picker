@@ -71,3 +71,15 @@ input[type="submit"]:hover {
 fieldset + fieldset {
     margin-top: 20px;
 }
+
+li {
+    color: #333; /* Text color (adjust to your preference) */
+    padding: 5px 0; /* Padding for top and bottom (adjust as needed) */
+}
+
+p {
+    font-size: 16px; /* Adjust the font size to your preference */
+    line-height: 1.5; /* Adjust the line height for spacing between lines */
+    margin: 10px 0; /* Margin for top and bottom (adjust as needed) */
+    color: #333; /* Text color (adjust to your preference) */
+}
