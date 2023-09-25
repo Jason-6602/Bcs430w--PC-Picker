@@ -34,6 +34,10 @@ Text field Forms - Need to add user survey to find out what kind of PC they requ
 
         <fieldset>
                             <legend>What is your Spending Budget to buy a computer?</legend>
+                          <p>
+                           We’ll do our best to find the best matching computer for the price you’re looking for.
+                          </p>
+
                             <label>
                                 <input type="radio" name="q1" value="200$"> My budget is 200$, or less.
                             </label>
@@ -75,6 +79,8 @@ Text field Forms - Need to add user survey to find out what kind of PC they requ
                 </fieldset>
 
 
+
+
         <fieldset>
                             <legend>Do you plan on playing Video Games with this computer</legend>
                             <label>
@@ -94,7 +100,30 @@ Text field Forms - Need to add user survey to find out what kind of PC they requ
                             </label>
                         </fieldset>
 
-<fieldset>
+                        <fieldset>
+                            <legend>If you play games, what kind of Gamer are you?</legend>
+                            <label>
+                                <input type="radio" name="q3" value="YesGames">  MUST HAVE EXTREME EVERYTHING
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="q3" value="NoGames"> I want a Virtual Reality ready PC
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="q3" value="LightGaming"> Casual gamer who wants to play the latest games
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="q3" value="PossibleGaming">   I only play Minecraft or classic games
+                            </label>
+                             <br>
+                            <label>
+                                <input type="radio" name="q3" value="PossibleGaming">   I don't play games.
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
                             <legend>Do you stream video games or other media online?</legend>
                             <label>
                                 <input type="radio" name="q4" value="YesStreaming"> Yes, I plan on streaming in Hi-def.
@@ -131,9 +160,10 @@ Text field Forms - Need to add user survey to find out what kind of PC they requ
 
 
         <fieldset>
-                            <legend>Will this PC only be for company usage (Microsoft Applications? - Excel, Word, PPT?)</legend>
+                            <legend>Will this PC be for company usage or for Schoolwork purposes? (Microsoft Applications? - Excel, Word, PPT?)</legend>
+                            <br>
                             <label>
-                                <input type="radio" name="q6" value="YesMicrosoft"> Yes, it will be used at work for data entry only.
+                                <input type="radio" name="q6" value="YesMicrosoft"> This PC will be used for Document Writing and browsing the web only.
                             </label>
                             <br>
                             <label>
@@ -142,12 +172,25 @@ Text field Forms - Need to add user survey to find out what kind of PC they requ
 
                             <br>
                             <label>
-                                <input type="radio" name="q6" value="PossibleMicrosoft"> Maybe in the future.
+                                <input type="radio" name="q6" value="PossibleMicrosoft"> This PC will be used for Programming or Engineering Software.
+                            </label>
+
+                            <br>
+                            <label>
+                                <input type="radio" name="q6" value="PossibleMicrosoft"> This PC will be used for Audio production, video production, art and photo editing and design
                             </label>
                         </fieldset>
 
         <fieldset>
                             <legend>Will you store many videos, pictures, or games on this PC? </legend>
+
+                            <p>
+                            Computer storage is like a digital filing cabinet or a virtual closet for a computer.
+                            It's a place where a computer keeps all the information and files it needs to do its job.
+                            Hard drive storage is like the computer's long-term memory.
+                            It's where the computer stores things that it wants to remember even when it's turned off.
+                            </p>
+                            <br>
                             <label>
                                 <input type="radio" name="q7" value="LargeStorage"> Yes, I need a lot of storage.
                             </label>
@@ -164,7 +207,12 @@ Text field Forms - Need to add user survey to find out what kind of PC they requ
 
 
         <fieldset>
-                            <legend>What Size PC or Laptop would you prefer? </legend>
+                            <legend>What Size Desktop or Laptop would you prefer? </legend>
+                            <p>
+                            A desktop computer is a stationary device that stays in one place, typically more powerful and easily upgradable,
+                             while a laptop is a portable computer designed for mobility.
+                             </p>
+
                             <label>
                                 <input type="radio" name="q8" value="ATX"> I can fit a large desktop in my office/home.
                             </label>
