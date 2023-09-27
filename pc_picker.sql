@@ -41,6 +41,34 @@ CREATE TABLE `desktop` (
 -- --------------------------------------------------------
 
 --
+-- Dumping data for table 'desktop'
+--
+
+INSERT INTO desktop (`desktop_ID`, `make`, `name`, `price`, `partList_ID`, `category`, `url`) VALUES
+(1, Dell, Inspiron 3020 Desktop, 769.99, 1, Desktop, https://www.dell.com/en-us/shop/desktop-computers/inspiron-desktop/spd/inspiron-3020-desktop)
+(2, HP, Pavilion Desktop TP01-3025t, 699.99, 2, Desktop, https://www.hp.com/us-en/shop/pdp/hp-pavilion-desktop-tp01-3025t-bundle-pc)
+(3, Alienware, Aurora R16 Gaming Desktop, 1299.99, 3, Desktop, https://www.dell.com/en-us/shop/desktop-computers/alienware-aurora-r16-gaming-desktop/spd/alienware-aurora-r16-desktop)
+(4, Lenovo, ThinkStation P620 Workstation, 1619.00, 4, Desktop, https://www.lenovo.com/us/en/p/workstations/thinkstation-p-series/thinkstation-p620/wmd00000429)
+(5, Acer, Aspire XC-840-UB11 Desktop, 399.99, 5, Desktop, https://www.acer.com/us-en/desktops-and-all-in-ones/aspire-classic-desktops/aspire-xc/pdp/DT.BJEAA.001)
+(6, ASUS, ASUS ExpertCenterD5 SFF, 799.99, 6, Desktop, https://www.asus.com/us/displays-desktops/tower-pcs/expertcenter/expertcenter-d5-sff-d500sd)
+(7, Acer, Aspire C27-1700 All-in-One, 899.99, 7, Desktop, https://www.acer.com/us-en/desktops-and-all-in-ones/aspire-all-in-ones/aspire-c27/pdp/DQ.BK3AA.001)
+(8, Lenovo, IdeaCentre 5i Desktop, 759.99, 8, Desktop, https://www.lenovo.com/us/en/p/desktops/ideacentre/500-series/ideacentre-5i-gen-8-(14l-intel)/len102d0029)
+(9, MSI, Trident 3 SFF, 1329.99, 9, Desktop, https://www.msi.com/Desktop/MPG-Trident-3-12th)
+(10, HP, Z2 Tower G9 Workstation, 1299.99, 10, Desktop, https://www.hp.com/us-en/workstations/z2-tower-configure.html)
+(11, Dell, XPS Pro, 1609.99, 11, Desktop, https://www.dell.com/en-us/shop/desktop-computers/new-xps-desktop/spd/xps-8960-desktop/usexpstpcto8960rpl04)
+(12, ASUS, ExpertCenter D500SA, 499.99, 12, Desktop, https://www.asus.com/us/commercial-desktop/expertcenter-d5-sff-d500sa/)
+(13, CyberPowerPC, Gamer Xtreme VR Gaming PC, 1785.00, 13, Desktop, https://www.cyberpowerpc.com/system/Gaming-PC-Xtreme-XT)
+(14, Zotac, ZBOX edge MI 668, 299.99, 14, Desktop, https://www.zotac.com/product/mini_pcs/zbox-edge-mi668-barebone)
+(15, Acer, Aspire XC-1780-UR11, 499.99, 15, Desktop, https://www.acer.com/us-en/desktops-and-all-in-ones/aspire-classic-desktops/aspire-xc/pdp/DT.BKAAA.001)
+(16, Lenovo, Legion Tower 7i Gen 8, 1819.99, 16, Desktop, https://www.lenovo.com/us/en/p/desktops/legion-desktops/legion-t-series-towers/legion-tower-7i-gen-8-(34l-intel)/len102g0007)
+(17, Alienware, Aurora Ryzen Edition R15, 1549.99, 17, Desktop, https://www.dell.com/en-us/shop/desktop-computers/alienware-aurora-r15-gaming-desktop/spd/alienware-aurora-r15-amd-desktop/wdr15amd20h)
+(18, Lenovo, ThinkStation P3 Ultra, 1499.00, 18, Desktop, https://www.lenovo.com/us/en/p/workstations/thinkstation-p-series/thinkstation-p3-ultra-workstation/len102s0014)
+(10, HP, EliteOne 870 G9, 1499.00, PD0021, 19, Desktop, https://www.hp.com/us-en/shop/pdp/hp-eliteone-870-g9-all-in-one-pc-wolf-pro-security-edition-p-89p61ua-aba-1)
+(20, Dell, Inspiron Small Desktop, 549.99, 20, Desktop, https://www.dell.com/en-us/shop/desktop-computers/inspiron-small-desktop/spd/inspiron-3020-small-desktop/useishbts3020gcrg)
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `desktop_partlist`
 --
 
@@ -52,6 +80,32 @@ CREATE TABLE `desktop_partlist` (
   `storage` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
   `size` char(50) COLLATE utf8mb4_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `desktop_partlist`
+--
+
+INSERT INTO `desktop_partlist` (`desktop_pl_id`, `cpu`, `gpu`, `ram`, `storage`, `size`) VALUES
+(1, 'Intel Core i5-13700', 'Intel UHD Graphics 770', '16GB DDR4', '512GB NVMe SSD', 'Mid Tower'),
+(2, 'Intel Core i5-10400', 'Intel UHD Graphics 730', '8GB DDR4', '1TB HDD + 512GB SSD', 'Mid Tower'),
+(3, 'Intel Core i7-13700F', 'NVIDIA GeForce RTX 4060', '16GB DDR4', '1TB NVMe SSD', 'Mid Tower'),
+(4, 'AMD Ryzen™ Threadripper PRO 5945WX', 'NVIDIA T1000', '32GB DDR4', '1TB NVMe SSD', 'Full Tower'),
+(5, 'Intel Celeron N4505', 'Intel UHD Graphics 630', '8GB DDR4', '512GB SSD', 'Mid Tower'),
+(6, 'Intel Core i5-12400', 'Intel Core i5-12400', '8GB DDR4', '512GB SSD', 'Small Form Factor'),
+(7, 'Intel Core i5-1235U', 'Iris Xe Graphics', '16GB DDR4', '512GB SSD', 'All-in-One'),
+(8, 'Intel Core i7-13700', 'Intel UHD Graphics 770', '16GB DDR4', '512GB SSD', 'Small Form Factor'),
+(9, 'Intel Core i7-12700', 'NVIDIA GeForce RTX 3060', '32GB DDR4', '2TB NVMe SSD', 'Small Form Factor'),
+(10, 'Intel Core i7 13700', 'Intel UHD Graphics 770', '16GB DDR5', '512GB SSD', 'Mid Tower'),
+(11, 'Intel® Core™ i7-13700', 'NVIDIA GeForce RTX 4060TI', '16B DDR5', '512TB NVMe SSD', 'Mid Tower'),
+(12, 'Intel Core i5-10400', 'Intel UHD Graphics 630', '8GB DDR4', '512GB SSD', 'Mid Tower'),
+(13, 'Intel Core i7-13700K', 'NVIDIA GeForce RTX 4060TI', '32GB DDR5', '2TB NVMe SSD', 'Full Tower'),
+(14, 'Intel Core i7-1360P', 'Intel Iris Xe Graphics', '8GB DDR4', '512GB SSD', 'Small Form Factor'),
+(15, 'Intel Core i7-11700K', 'NVIDIA GeForce RTX 3070', '32GB DDR4', '1TB SSD', 'Mid Tower'),
+(16, 'AMD Ryzen 9 6900XT', 'NVIDIA GeForce RTX 3090', '64GB DDR4', '2TB NVMe SSD', 'Mid Tower'),
+(17, 'Intel Core i7-10700', 'NVIDIA GeForce RTX 3060', '16GB DDR4', '512GB SSD', 'Small Form Factor'),
+(18, 'AMD Ryzen 7 5800X', 'NVIDIA GeForce RTX 3070', '32GB DDR4', '1TB NVMe SSD', 'Mid Tower'),
+(19, 'Intel Core i9-11900', 'NVIDIA GeForce GTX 1660 Super', '16GB DDR4', '512GB SSD', 'Small Form Factor'),
+(20, 'AMD Ryzen 5 5600G', 'Integrated Radeon Graphics', '16GB DDR4', '512GB SSD', 'Small Form Factor');
 
 -- --------------------------------------------------------
 
