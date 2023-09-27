@@ -1,8 +1,8 @@
 INSERT INTO Desktop (`Desktop_ID`, `Make`, `Name`, `Price`, `PartList_ID`, `Category`, `WebsiteURL`, `Supplier_ID`)
 VALUES
---Entry Level Desktop
-(D0001, Dell, Inspiron 3020 Desktop, 499.99, PD0001, Desktop, https://www.dell.com/en-us/shop/desktop-computers/inspiron-small-desktop/spd/inspiron-3020-small-desktop/useishbts3020gcrg, S0001)
 --Mid Level Desktop
+(D0001, Dell, Inspiron 3020 Desktop, 769.99, PD0001, Desktop, https://www.dell.com/en-us/shop/desktop-computers/inspiron-desktop/spd/inspiron-3020-desktop, S0001)
+--Entry Level Desktop
 (D0002, HP, Pavilion Desktop TP01-3025t, 699.99, PD0002, Desktop, https://www.hp.com/us-en/shop/pdp/hp-pavilion-desktop-tp01-3025t-bundle-pc, S0002)
 --High End Desktop
 (D0003, Alienware, Aurora R16 Gaming Desktop, 1299.99, PD0003, Desktop, https://www.dell.com/en-us/shop/desktop-computers/alienware-aurora-r16-gaming-desktop/spd/alienware-aurora-r16-desktop, S0003)
