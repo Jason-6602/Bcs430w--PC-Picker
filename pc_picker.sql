@@ -62,8 +62,8 @@ INSERT INTO desktop (`desktop_ID`, `make`, `name`, `price`, `partList_ID`, `cate
 (15, Acer, Aspire XC-1780-UR11, 499.99, 15, Desktop, https://www.acer.com/us-en/desktops-and-all-in-ones/aspire-classic-desktops/aspire-xc/pdp/DT.BKAAA.001)
 (16, Lenovo, Legion Tower 7i Gen 8, 1819.99, 16, Desktop, https://www.lenovo.com/us/en/p/desktops/legion-desktops/legion-t-series-towers/legion-tower-7i-gen-8-(34l-intel)/len102g0007)
 (17, Alienware, Aurora Ryzen Edition R15, 1549.99, 17, Desktop, https://www.dell.com/en-us/shop/desktop-computers/alienware-aurora-r15-gaming-desktop/spd/alienware-aurora-r15-amd-desktop/wdr15amd20h)
-(18, Lenovo, ThinkStation P3 Ultra, 1499.00, 18, Desktop, https://www.lenovo.com/us/en/p/workstations/thinkstation-p-series/thinkstation-p3-ultra-workstation/len102s0014)
-(10, HP, EliteOne 870 G9, 1499.00, PD0021, 19, Desktop, https://www.hp.com/us-en/shop/pdp/hp-eliteone-870-g9-all-in-one-pc-wolf-pro-security-edition-p-89p61ua-aba-1)
+(18, Lenovo, ThinkStation P3 Ultra, 1159.00, 18, Desktop, https://www.lenovo.com/us/en/p/workstations/thinkstation-p-series/thinkstation-p3-ultra-workstation/len102s0014)
+(19, HP, EliteOne 870 G9, 1499.00, PD0021, 19, Desktop, https://www.hp.com/us-en/shop/pdp/hp-eliteone-870-g9-all-in-one-pc-wolf-pro-security-edition-p-89p61ua-aba-1)
 (20, Dell, Inspiron Small Desktop, 549.99, 20, Desktop, https://www.dell.com/en-us/shop/desktop-computers/inspiron-small-desktop/spd/inspiron-3020-small-desktop/useishbts3020gcrg)
 
 -- --------------------------------------------------------
@@ -89,7 +89,7 @@ INSERT INTO `desktop_partlist` (`desktop_pl_id`, `cpu`, `gpu`, `ram`, `storage`,
 (1, 'Intel Core i5-13700', 'Intel UHD Graphics 770', '16GB DDR4', '512GB NVMe SSD', 'Mid Tower'),
 (2, 'Intel Core i5-10400', 'Intel UHD Graphics 730', '8GB DDR4', '1TB HDD + 512GB SSD', 'Mid Tower'),
 (3, 'Intel Core i7-13700F', 'NVIDIA GeForce RTX 4060', '16GB DDR4', '1TB NVMe SSD', 'Mid Tower'),
-(4, 'AMD Ryzen™ Threadripper PRO 5945WX', 'NVIDIA T1000', '32GB DDR4', '1TB NVMe SSD', 'Full Tower'),
+(4, 'AMD Ryzen Threadripper PRO 5945WX', 'NVIDIA T1000', '32GB DDR4', '1TB NVMe SSD', 'Full Tower'),
 (5, 'Intel Celeron N4505', 'Intel UHD Graphics 630', '8GB DDR4', '512GB SSD', 'Mid Tower'),
 (6, 'Intel Core i5-12400', 'Intel Core i5-12400', '8GB DDR4', '512GB SSD', 'Small Form Factor'),
 (7, 'Intel Core i5-1235U', 'Iris Xe Graphics', '16GB DDR4', '512GB SSD', 'All-in-One'),
@@ -100,12 +100,12 @@ INSERT INTO `desktop_partlist` (`desktop_pl_id`, `cpu`, `gpu`, `ram`, `storage`,
 (12, 'Intel Core i5-10400', 'Intel UHD Graphics 630', '8GB DDR4', '512GB SSD', 'Mid Tower'),
 (13, 'Intel Core i7-13700K', 'NVIDIA GeForce RTX 4060TI', '32GB DDR5', '2TB NVMe SSD', 'Full Tower'),
 (14, 'Intel Core i7-1360P', 'Intel Iris Xe Graphics', '8GB DDR4', '512GB SSD', 'Small Form Factor'),
-(15, 'Intel Core i7-11700K', 'NVIDIA GeForce RTX 3070', '32GB DDR4', '1TB SSD', 'Mid Tower'),
-(16, 'AMD Ryzen 9 6900XT', 'NVIDIA GeForce RTX 3090', '64GB DDR4', '2TB NVMe SSD', 'Mid Tower'),
-(17, 'Intel Core i7-10700', 'NVIDIA GeForce RTX 3060', '16GB DDR4', '512GB SSD', 'Small Form Factor'),
-(18, 'AMD Ryzen 7 5800X', 'NVIDIA GeForce RTX 3070', '32GB DDR4', '1TB NVMe SSD', 'Mid Tower'),
-(19, 'Intel Core i9-11900', 'NVIDIA GeForce GTX 1660 Super', '16GB DDR4', '512GB SSD', 'Small Form Factor'),
-(20, 'AMD Ryzen 5 5600G', 'Integrated Radeon Graphics', '16GB DDR4', '512GB SSD', 'Small Form Factor');
+(15, 'Intel Core i3-13100', 'Intel UHD Graphics 730', '8GB DDR4', '512GB SSD', 'Mid Tower'),
+(16, 'Intel® Core™ i7-13700KF', 'NVIDIA GeForce RTX 4070TI', '16GB DDR5', '1TB NVMe SSD', 'Mid Tower'),
+(17, 'AMD Ryzen 7 7700', 'NVIDIA GeForce RTX 3060', '16GB DDR4', '512GB SSD', 'Small Form Factor'),
+(18, 'Intel Core i5-13600', 'Intel UHD Graphics 770', '16GB DDR5', '512GB SSD', 'Small Form Factor'),
+(19, 'Intel Core™i7-13700', 'Intel UHD Graphics 770', '16GB DDR4', '512GB SSD', 'All-in-One'),
+(20, 'Intel Core i5-13400', 'Intel UHD Graphics 730', '8GB DDR4', '512GB SSD', 'Small Form Factor');
 
 -- --------------------------------------------------------
 
