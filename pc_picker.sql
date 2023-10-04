@@ -45,7 +45,7 @@ CREATE TABLE `desktop` (
 --
 
 -- --------------------------------------------------------
-INSERT INTO desktop (`desktop_ID`, `make`, `name`, `price`, `partList_ID`, `category`, `url`) VALUES
+INSERT INTO desktop (`desktop_ID`, `make`, `name`, `price`, `desktop_pl_id`, `category`, `url`) VALUES
 (1, 'Dell', 'Inspiron 3020 Desktop', 769.99, 1, 'Desktop', 'https://www.dell.com/en-us/shop/desktop-computers/inspiron-desktop/spd/inspiron-3020-desktop'),
 (2, 'HP', 'Pavilion Desktop TP01-3025t', 699.99, 2, 'Desktop', 'https://www.hp.com/us-en/shop/pdp/hp-pavilion-desktop-tp01-3025t-bundle-pc'),
 (3, 'Alienware', 'Aurora R16 Gaming Desktop', 1299.99, 3, 'Desktop', 'https://www.dell.com/en-us/shop/desktop-computers/alienware-aurora-r16-gaming-desktop/spd/alienware-aurora-r16-desktop'),
@@ -64,7 +64,7 @@ INSERT INTO desktop (`desktop_ID`, `make`, `name`, `price`, `partList_ID`, `cate
 (16, 'Lenovo', 'Legion Tower 7i Gen 8', 1819.99, 16, 'Desktop', 'https://www.lenovo.com/us/en/p/desktops/legion-desktops/legion-t-series-towers/legion-tower-7i-gen-8-(34l-intel)/len102g0007'),
 (17, 'Alienware', 'Aurora Ryzen Edition R15', 1549.99, 17, 'Desktop', 'https://www.dell.com/en-us/shop/desktop-computers/alienware-aurora-r15-gaming-desktop/spd/alienware-aurora-r15-amd-desktop/wdr15amd20h'),
 (18, 'Lenovo', 'ThinkStation P3 Ultra', 1159.00, 18, 'Desktop', 'https://www.lenovo.com/us/en/p/workstations/thinkstation-p-series/thinkstation-p3-ultra-workstation/len102s0014'),
-(19, 'HP', 'EliteOne 870 G9', 1499.00, 'PD0021', 19, 'Desktop', 'https://www.hp.com/us-en/shop/pdp/hp-eliteone-870-g9-all-in-one-pc-wolf-pro-security-edition-p-89p61ua-aba-1'),
+(19, 'HP', 'EliteOne 870 G9', 1499.00, 19, 'Desktop', 'https://www.hp.com/us-en/shop/pdp/hp-eliteone-870-g9-all-in-one-pc-wolf-pro-security-edition-p-89p61ua-aba-1'),
 (20, 'Dell', 'Inspiron Small Desktop', 549.99, 20, 'Desktop', 'https://www.dell.com/en-us/shop/desktop-computers/inspiron-small-desktop/spd/inspiron-3020-small-desktop/useishbts3020gcrg');
 
 --
