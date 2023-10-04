@@ -12,7 +12,7 @@
       isset($_POST['q3']) &&
       isset($_POST['q4']) &&
       isset($_POST['q5']) &&
-      isset($_POST['q6']) &&
+      //isset($_POST['q6']) &&
       isset($_POST['q7']) &&
       isset($_POST['q8']) &&
       isset($_POST['q9']))
@@ -23,7 +23,7 @@
     $q3_answer = isset($_POST['q3']) ? $_POST['q3'] : null;
     $q4_answer = isset($_POST['q4']) ? $_POST['q4'] : null;
     $q5_answer = isset($_POST['q5']) ? $_POST['q5'] : null;
-    $q6_answer = isset($_POST['q6']) ? $_POST['q6'] : null;
+   // $q6_answer = isset($_POST['q6']) ? $_POST['q6'] : null;
     $q7_answer = isset($_POST['q7']) ? $_POST['q7'] : null;
     $q8_answer = isset($_POST['q8']) ? $_POST['q8'] : null;
     $q9_answer = isset($_POST['q9']) ? $_POST['q9'] : null;
@@ -35,10 +35,11 @@
     echo "Question 3 : $q3_answer <br>";
     echo "Question 4 : $q4_answer <br>";
     echo "Question 5 : $q5_answer <br>";
-    echo "Question 6 : $q6_answer<br>";
+   // echo "Question 6 : $q6_answer<br>";
     echo "Question 7 : $q7_answer<br>";
     echo "Question 8 : $q8_answer<br>";
     echo "Question 9 : $q9_answer<br>";
+  echo "<br>";
 
 
 
@@ -59,6 +60,28 @@
     if (!$result) echo "INSERT failed<br><br>"; //if unable, throw error
      */
   }
+
+  //If certain answer is chose, redirect to different pages
+
+
+  if($q2_answer== 'DesktopPC'){
+  echo "I see you have chosen a desktop PC, please continue below";
+  //header("Location: ../DesktopForm.html");
+  //exit();
+  die("<p><a href='./DesktopForm.html'>Click here to continue</a></p>");
+
+
+  }elseif($q2_answer== 'Laptop'){
+  echo "I see you have chosen a laptop, please continue below";
+ // header("Location: ../LaptopForm.html");
+ //exit();
+  die("<p><a href='./LaptopForm.html'>Click here to continue</a></p>");
+
+  }else{
+  echo "Sorry, I did not understand your request, please try again later: Error Code 910";
+  die("<p><a href='./addrecordsform.html'>Click here to continue</a></p>");
+  }
+
 
     // Process User Survey here
     // Need to create PseudoCode for user survey
