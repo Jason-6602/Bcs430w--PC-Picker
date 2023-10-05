@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PC Parts Picker Tool</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <?php
+        // If user is not logged in, return to registration page...
+        //Testing new branch
+
+        session_start();
+        if(!isset($_SESSION['username'])) {
+            echo "You are not logged in, please return to registration page";
+
+            echo '<p> <a href="../login/login.html">Return to Login</a> </p>';
+        }
+    ?>
+
+    <div id="container">
+
+        <header>
+            <a href="../home/index.html"><img src="../login/companylogo.jpg" alt="PC Parts Logo"></a>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="../home/index.html">Home</a></li>
+                <li><a href="addrecordsform.html">PC Part Tool</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="../login/login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <div id="hero-img">
+            <!--Blank For now-->
+        </div>
+
+
+        <main>
+
+            <div class="table">
+
+                <h1>BCS 430W PC Part Picker User Survey</h1>
+
+                <!--
+                Text field Forms - Need to add user survey to find out what kind of PC they require
+                -->
+                <h2> Looks like you chose a desktop, please answer some more questions to find your PC! </h2>
+                <form method="post" action="addrecords.php">
+
+                    <fieldset>
+                        <legend><h4>Please select a case size from the options below</h4></legend>
+
+
+                        <label>
+                            <p><input type="radio" name="q1" value="300$">Full Tower Desktop Case</p>
+                            <p>Full-tower cases are spacious, offering ample room for high-end components, extensive cooling solutions,
+                                and multiple storage drives, making them ideal for enthusiasts and gamers who require maximum performance and customization options</p>
+                        </label><br>
+
+                        <label>
+                            <p><input type="radio" name="q1" value="500$">Mid-Tower Desktop Case</p>
+
+                            <p>Mid-tower cases strike a balance between size and functionality, providing sufficient space for most gaming and productivity builds,
+                            accommodating standard components, and offering good airflow and cable management. </p>
+                        </label><br>
+
+                        <label>
+                            <p><input type="radio" name="q1" value="1000$">Mini Desktop PC Case</p>
+
+                            <p>Mini-ITX cases are compact and space-saving, suitable for small form factor builds,
+                            making them a great choice for minimalist setups. </p>
+                        </label><br>
+
+                    </fieldset>
+
+
+                    <fieldset>
+                        <legend><h4>What will the Desktop Computer be primarily used for?r</h4></legend>
+
+                        <label>
+                            <p><input type="radio" name="q3" value="MultiPurpose">Multipurpose: A multipurpose computer is used for a wide range of tasks,
+                                including work, entertainment, education, gaming, communication, and general computing needs, providing versatility for various user requirements.</p>
+                        </label><br>
+
+                        <label>
+                            <p><input type="radio" name="q3" value="GamingPC">Gaming : A multipurpose computer is used for a wide range of tasks, including work, entertainment, education, gaming, communication,
+                                and general computing needs, providing versatility for various user requirements.</p>
+                        </label><br>
+
+                        <label>
+                            <p><input type="radio" name="q3" value="SchoolComputer">School Computer: A school computer is used for various educational tasks, such as research, assignments,
+                                accessing learning resources, and conducting school-related activities.</p>
+                        </label><br>
+
+                        <label>
+                            <p><input type="radio" name="q3" value="WorkComputer">Work Computer:A work computer is used for professional tasks, including office work, communication,
+                                data analysis, and software applications relevant to the job </p>
+                        </label>
+
+                    </fieldset>
+
+
+
+                    <br>
+                    <input type="submit" value="Submit Record">
+                </form>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2021. All Rights Reserved.</p>
+            <p><a href="mailto:pcparts@picker.com">PCparts@picker.com</a><p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
