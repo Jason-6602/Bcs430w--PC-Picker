@@ -42,25 +42,25 @@ CREATE TABLE `desktop` (
 --
 
 INSERT INTO `desktop` (`desktop_id`, `make`, `name`, `price`, `desktop_pl_id`, `category`, `url`) VALUES
-(1, 'Dell', 'Inspiron 3020 Desktop', 769.99, 1, 'Desktop', 'https://www.dell.com/en-us/shop/desktop-computers/inspiron-desktop/spd/inspiron-3020-desktop'),
-(2, 'HP', 'Pavilion Desktop TP01-3025t', 699.99, 2, 'Desktop', 'https://www.hp.com/us-en/shop/pdp/hp-pavilion-desktop-tp01-3025t-bundle-pc'),
-(3, 'Alienware', 'Aurora R16 Gaming Desktop', 1299.99, 3, 'Desktop', 'https://www.dell.com/en-us/shop/desktop-computers/alienware-aurora-r16-gaming-desktop/spd/alienware-aurora-r16-desktop'),
-(4, 'Lenovo', 'ThinkStation P620 Workstation', 1619.00, 4, 'Desktop', 'https://www.lenovo.com/us/en/p/workstations/thinkstation-p-series/thinkstation-p620/wmd00000429'),
-(5, 'Acer', 'Aspire XC-840-UB11 Desktop', 399.99, 5, 'Desktop', 'https://www.acer.com/us-en/desktops-and-all-in-ones/aspire-classic-desktops/aspire-xc/pdp/DT.BJEAA.001'),
-(6, 'ASUS', 'ASUS ExpertCenterD5 SFF', 799.99, 6, 'Desktop', 'https://www.asus.com/us/displays-desktops/tower-pcs/expertcenter/expertcenter-d5-sff-d500sd'),
-(7, 'Acer', 'Aspire C27-1700 All-in-One', 899.99, 7, 'Desktop', 'https://www.acer.com/us-en/desktops-and-all-in-ones/aspire-all-in-ones/aspire-c27/pdp/DQ.BK3AA.001'),
-(8, 'Lenovo', 'IdeaCentre 5i Desktop', 759.99, 8, 'Desktop', 'https://www.lenovo.com/us/en/p/desktops/ideacentre/500-series/ideacentre-5i-gen-8-(14l-intel)/len102d0029'),
-(9, 'MSI', 'Trident 3 SFF', 1329.99, 9, 'Desktop', 'https://www.msi.com/Desktop/MPG-Trident-3-12th'),
-(10, 'HP', 'Z2 Tower G9 Workstation', 1299.99, 10, 'Desktop', 'https://www.hp.com/us-en/workstations/z2-tower-configure.html'),
-(11, 'Dell', 'XPS Pro', 1609.99, 11, 'Desktop', 'https://www.dell.com/en-us/shop/desktop-computers/new-xps-desktop/spd/xps-8960-desktop/usexpstpcto8960rpl04'),
-(12, 'ASUS', 'ExpertCenter D500SA', 499.99, 12, 'Desktop', 'https://www.asus.com/us/commercial-desktop/expertcenter-d5-sff-d500sa/'),
-(13, 'CyberPowerPC', 'Gamer Xtreme VR Gaming PC', 1785.00, 13, 'Desktop', 'https://www.cyberpowerpc.com/system/Gaming-PC-Xtreme-XT'),
-(14, 'Zotac', 'ZBOX edge MI 668', 299.99, 14, 'Desktop', 'https://www.zotac.com/product/mini_pcs/zbox-edge-mi668-barebone'),
-(15, 'Acer', 'Aspire XC-1780-UR11', 499.99, 15, 'Desktop', 'https://www.acer.com/us-en/desktops-and-all-in-ones/aspire-classic-desktops/aspire-xc/pdp/DT.BKAAA.001'),
-(16, 'Lenovo', 'Legion Tower 7i Gen 8', 1819.99, 16, 'Desktop', 'https://www.lenovo.com/us/en/p/desktops/legion-desktops/legion-t-series-towers/legion-tower-7i-gen-8-(34l-intel)/len102g0007'),
-(17, 'Alienware', 'Aurora Ryzen Edition R15', 1549.99, 17, 'Desktop', 'https://www.dell.com/en-us/shop/gaming-and-games/alienware-aurora-r15-gaming-desktop/spd/alienware-aurora-r15-amd-desktop/wdr15amd50h),\r\n(18, Lenovo, ThinkStation P3 Ultra, 1159.00, 18, Desktop, https://www.lenovo.com/us/en/p/workstations/thinkstation-p-series/thinkstation-p3-ultra-workstation/len102s0014'),
-(19, 'HP', 'EliteOne 870 G9', 1499.00, 19, 'Desktop', 'https://www.hp.com/us-en/shop/pdp/hp-eliteone-870-g9-all-in-one-pc-wolf-pro-security-edition-p-89p61ua-aba-1'),
-(20, 'Dell', 'Inspiron Small Desktop', 549.99, 20, 'Desktop', 'https://www.dell.com/en-us/shop/desktop-computers/inspiron-small-desktop/spd/inspiron-3020-small-desktop/useishbts3020gcrg');
+(1, 'Dell', 'Inspiron 3020 Desktop', 769.99, 1, 'Student Desktop', 'https://www.dell.com/en-us/shop/desktop-computers/inspiron-desktop/spd/inspiron-3020-desktop'),
+(2, 'HP', 'Pavilion Desktop TP01-3025t', 699.99, 2, 'Student Desktop', 'https://www.hp.com/us-en/shop/pdp/hp-pavilion-desktop-tp01-3025t-bundle-pc'),
+(3, 'Alienware', 'Aurora R16 Gaming Desktop', 1299.99, 3, 'Gaming Desktop', 'https://www.dell.com/en-us/shop/desktop-computers/alienware-aurora-r16-gaming-desktop/spd/alienware-aurora-r16-desktop'),
+(4, 'Lenovo', 'ThinkStation P620 Workstation', 1619.00, 4, 'Workstation', 'https://www.lenovo.com/us/en/p/workstations/thinkstation-p-series/thinkstation-p620/wmd00000429'),
+(5, 'Acer', 'Aspire XC-840-UB11 Desktop', 399.99, 5, 'Student Desktop', 'https://www.acer.com/us-en/desktops-and-all-in-ones/aspire-classic-desktops/aspire-xc/pdp/DT.BJEAA.001'),
+(6, 'ASUS', 'ASUS ExpertCenterD5 SFF', 799.99, 6, 'Workstation', 'https://www.asus.com/us/displays-desktops/tower-pcs/expertcenter/expertcenter-d5-sff-d500sd'),
+(7, 'Acer', 'Aspire C27-1700 All-in-One', 899.99, 7, 'All-in-One Desktop', 'https://www.acer.com/us-en/desktops-and-all-in-ones/aspire-all-in-ones/aspire-c27/pdp/DQ.BK3AA.001'),
+(8, 'Lenovo', 'IdeaCentre 5i Desktop', 759.99, 8, 'Student Desktop', 'https://www.lenovo.com/us/en/p/desktops/ideacentre/500-series/ideacentre-5i-gen-8-(14l-intel)/len102d0029'),
+(9, 'MSI', 'Trident 3 SFF', 1329.99, 9, 'Gaming Desktop', 'https://www.msi.com/Desktop/MPG-Trident-3-12th'),
+(10, 'HP', 'Z2 Tower G9 Workstation', 1299.99, 10, 'Workstation', 'https://www.hp.com/us-en/workstations/z2-tower-configure.html'),
+(11, 'Dell', 'XPS Pro', 1609.99, 11, 'Gaming Desktop', 'https://www.dell.com/en-us/shop/desktop-computers/new-xps-desktop/spd/xps-8960-desktop/usexpstpcto8960rpl04'),
+(12, 'ASUS', 'ExpertCenter D500SA', 499.99, 12, 'Workstation', 'https://www.asus.com/us/commercial-desktop/expertcenter-d5-sff-d500sa/'),
+(13, 'CyberPowerPC', 'Gamer Xtreme VR Gaming PC', 1785.00, 13, 'Gaming Desktop', 'https://www.cyberpowerpc.com/system/Gaming-PC-Xtreme-XT'),
+(14, 'Zotac', 'ZBOX edge MI 668', 299.99, 14, 'Small Form Factor Desktop', 'https://www.zotac.com/product/mini_pcs/zbox-edge-mi668-barebone'),
+(15, 'Acer', 'Aspire XC-1780-UR11', 499.99, 15, 'Student Desktop', 'https://www.acer.com/us-en/desktops-and-all-in-ones/aspire-classic-desktops/aspire-xc/pdp/DT.BKAAA.001'),
+(16, 'Lenovo', 'Legion Tower 7i Gen 8', 1819.99, 16, 'Gaming Desktop', 'https://www.lenovo.com/us/en/p/desktops/legion-desktops/legion-t-series-towers/legion-tower-7i-gen-8-(34l-intel)/len102g0007'),
+(17, 'Alienware', 'Aurora Ryzen Edition R15', 1549.99, 17, 'Gaming Desktop', 'https://www.dell.com/en-us/shop/gaming-and-games/alienware-aurora-r15-gaming-desktop/spd/alienware-aurora-r15-amd-desktop/wdr15amd50h),\r\n(18, Lenovo, ThinkStation P3 Ultra, 1159.00, 18, Desktop, https://www.lenovo.com/us/en/p/workstations/thinkstation-p-series/thinkstation-p3-ultra-workstation/len102s0014'),
+(19, 'HP', 'EliteOne 870 G9', 1499.00, 19, 'All-in-One Desktop', 'https://www.hp.com/us-en/shop/pdp/hp-eliteone-870-g9-all-in-one-pc-wolf-pro-security-edition-p-89p61ua-aba-1'),
+(20, 'Dell', 'Inspiron Small Desktop', 549.99, 20, 'Small Form Factor Desktop', 'https://www.dell.com/en-us/shop/desktop-computers/inspiron-small-desktop/spd/inspiron-3020-small-desktop/useishbts3020gcrg');
 
 -- --------------------------------------------------------
 
