@@ -50,60 +50,219 @@
                 Text field Forms - Need to add user survey to find out what kind of PC they require
                 -->
                 <h2> Please fill out the Survey below: </h2>
-                <form method="post" action="addrecords.php">
+                <form id="myForm" method="post" action="addrecords.php">
 
-                    <fieldset>
-                        <legend><h4>What is your Spending Budget to buy a computer?</h4></legend>
-                        <p>We’ll do our best to find the best matching computer for the price you’re looking for.</p>
+                    <div id="question1">
+                        <fieldset>
+                            <legend><h4>What is your Spending Budget to buy a computer?</h4></legend>
+                            <p>We’ll do our best to find the best matching computer for the price you’re looking for.</p>
 
-                        <label>
-                            <p><input type="radio" name="q1" value="300$">My budget is 300$, or less.</p>
-                        </label><br>
+                            <label>
+                                <p><input type="radio" name="q1" value="300$">My budget is 300$, or less.</p>
+                            </label><br>
 
-                        <label>
-                            <p><input type="radio" name="q1" value="500$">My budget is 500$, or less.</p>
-                        </label><br>
+                            <label>
+                                <p><input type="radio" name="q1" value="500$">My budget is 500$, or less.</p>
+                            </label><br>
 
-                        <label>
-                            <p><input type="radio" name="q1" value="1000$">My budget is 1000$, or less.</p>
-                        </label><br>
+                            <label>
+                                <p><input type="radio" name="q1" value="1000$">My budget is 1000$, or less.</p>
+                            </label><br>
 
-                        <label>
-                            <p><input type="radio" name="q1" value="1500$">My budget is 1500$, or less.</p>
-                        </label><br>
+                            <label>
+                                <p><input type="radio" name="q1" value="1500$">My budget is 1500$, or less.</p>
+                            </label><br>
 
-                        <label>
-                            <p><input type="radio" name="q1" value="NoBudget">I Don't have a limit on my budget.</p>
-                       </label>
-                    </fieldset>
+                            <label>
+                                <p><input type="radio" name="q1" value="NoBudget">I Don't have a limit on my budget.</p>
+                           </label>
+                        </fieldset>
+                    </div>
 
-                    <fieldset>
-                        <legend><h4>Do you need a desktop PC or a laptop?</h4></legend>
-                        <p>Desktop PCs offer superior performance, upgradability, and cost-efficiency compared to laptops</p>
+                    <div id="question2">
+                        <fieldset>
+                            <legend><h4>Do you need a desktop PC or a laptop?</h4></legend>
+                            <p>Desktop PCs offer superior performance, upgradability, and cost-efficiency compared to laptops</p>
 
-                        <p>Laptops provide portability, space-saving design, built-in battery, and wireless connectivity for convenient on-the-go computing</p>
-                        <br>
-                        
-                        <label>
-                            <p><input type="radio" name="q2" value="DesktopPC">Desktop PC</p>
-                        </label><br>
+                            <p>Laptops provide portability, space-saving design, built-in battery, and wireless connectivity for convenient on-the-go computing</p>
+                            <br>
 
-                        <label>
-                            <p><input type="radio" name="q2" value="Laptop">Laptop</p>
-                        </label><br>
+                            <label>
+                                <p><input type="radio" name="q2" value="DesktopPC">Desktop PC</p>
+                            </label><br>
+
+                            <label>
+                                <p><input type="radio" name="q2" value="Laptop">Laptop</p>
+                            </label><br>
+                        </fieldset>
+                    </div>
+
+                    <div id="question3">
+                        <fieldset>
+                            <legend><h4>Which screen size below best suits your needs</h4></legend>
+
+                            <label>
+                                <p><input type="radio" name="q3" value="300$">Small Screen Laptops (11-13 inches): </p>
+                                <p>Small screen laptops are highly portable and compact!</p>
+                            </label><br>
+
+                            <label>
+                                <p><input type="radio" name="q3" value="500$">Standard Screen Laptops (14-16 inches): </p>
+                                <p>Standard screen laptops offer a balanced compromise between portability and usability!</p>
+                            </label><br>
+
+                            <label>
+                                <p><input type="radio" name="q3" value="1000$">Large Screen Laptops (17 inches and above): </p>
+                                <p>Large screen laptops provide an expansive display for immersive multimedia experiences and productivity</p>
+                            </label><br>
+                        </fieldset>
+                    </div>
+
+                    <div id="question4">
+                        <fieldset>
+                            <legend><h4>What will the Laptop be primarily used for?</h4></legend>
+
+                            <label>
+                                <p><input type="radio" name="q4" value="MultiPurpose">Multipurpose: A multipurpose computer is used for a wide range of tasks,
+                                    including work, entertainment, education, gaming, communication, and general computing needs, providing versatility for various user requirements.</p>
+                            </label><br>
+
+                            <label>
+                                <p><input type="radio" name="q2" value="GamingPC">Gaming : A multipurpose computer is used for a wide range of tasks, including work, entertainment, education, gaming, communication,
+                                    and general computing needs, providing versatility for various user requirements.</p>
+                            </label><br>
+
+                            <label>
+                                <p><input type="radio" name="q4" value="SchoolComputer">School Computer: A school computer is used for various educational tasks, such as research, assignments,
+                                    accessing learning resources, and conducting school-related activities.</p>
+                            </label><br>
+
+                            <label>
+                                <p><input type="radio" name="q4" value="WorkComputer">Work Computer:A work computer is used for professional tasks, including office work, communication,
+                                    data analysis, and software applications relevant to the job </p>
+                            </label><br>
+
+                            <label>
+                                <p><input type="radio" name="q4" value="Chromebook">Chromebook:A Chromebook computer is primarily used for web-based tasks such as browsing the internet,
+                                    using web apps, and basic productivity functions. </p>
+                            </label>
+                        </fieldset>
+                    </div>
+
+                    <div id="question5">
+                        <fieldset>
+                            <legend><h4>Please select a case size from the options below</h4></legend>
 
 
-                    </fieldset>
+                            <label>
+                                <p><input type="radio" name="q5" value="300$">Full Tower Desktop Case</p>
+                                <p>Full-tower cases are spacious, offering ample room for high-end components, extensive cooling solutions,
+                                    and multiple storage drives, making them ideal for enthusiasts and gamers who require maximum performance and customization options</p>
+                            </label><br>
 
+                            <label>
+                                <p><input type="radio" name="q5" value="500$">Mid-Tower Desktop Case</p>
 
+                                <p>Mid-tower cases strike a balance between size and functionality, providing sufficient space for most gaming and productivity builds,
+                                    accommodating standard components, and offering good airflow and cable management. </p>
+                            </label><br>
 
+                            <label>
+                                <p><input type="radio" name="q5" value="1000$">Mini Desktop PC Case</p>
 
+                                <p>Mini-ITX cases are compact and space-saving, suitable for small form factor builds,
+                                    making them a great choice for minimalist setups. </p>
+                            </label><br>
 
+                        </fieldset>
+                    </div>
 
+                    <div id="question6">
+                        <fieldset>
+                            <legend><h4>What will the Desktop Computer be primarily used for?r</h4></legend>
 
+                            <label>
+                                <p><input type="radio" name="q6" value="MultiPurpose">Multipurpose: A multipurpose computer is used for a wide range of tasks,
+                                    including work, entertainment, education, gaming, communication, and general computing needs, providing versatility for various user requirements.</p>
+                            </label><br>
 
+                            <label>
+                                <p><input type="radio" name="q2" value="GamingPC">Gaming : A multipurpose computer is used for a wide range of tasks, including work, entertainment, education, gaming, communication,
+                                    and general computing needs, providing versatility for various user requirements.</p>
+                            </label><br>
 
+                            <label>
+                                <p><input type="radio" name="q6" value="SchoolComputer">School Computer: A school computer is used for various educational tasks, such as research, assignments,
+                                    accessing learning resources, and conducting school-related activities.</p>
+                            </label><br>
 
+                            <label>
+                                <p><input type="radio" name="q6" value="WorkComputer">Work Computer:A work computer is used for professional tasks, including office work, communication,
+                                    data analysis, and software applications relevant to the job </p>
+                            </label>
+
+                        </fieldset>
+                    </div>
+
+                    <div id="question7">
+                        <fieldset>
+                            <legend><h4>Select the category of the gaming computer that best describes what you're looking for</h4></legend>
+
+                            <label>
+                                <p><input type="radio" name="q7" value="300$">Entry-Level Gaming Computer:
+                                    Entry-level gaming computers offer decent gaming performance at an affordable price point,
+                                    suitable for casual gamers or those with budget constraints.</p>
+                                <p>Small screen laptops are highly portable and compact!</p>
+                            </label><br>
+
+                            <label>
+                                <p><input type="radio" name="q7" value="500$">Mid-Range Gaming Computer:
+                                    Mid-range gaming computers provide a balanced blend of performance and cost,
+                                    delivering good graphics and speed for most gaming needs without breaking the bank.</p>
+                            </label><br>
+
+                            <label>
+                                <p><input type="radio" name="q7" value="1000$">High-End Gaming Computer:
+                                    High-end gaming computers are top-tier machines designed for demanding gamers, offering the best graphics, processing power,
+                                    and features for immersive and competitive gaming experiences, often at a premium price.</p>
+
+                            </label><br>
+                        </fieldset>
+                    </div>
+
+                    <script>
+                        const form = document.getElementById('myForm');
+                        const myDiv1 = document.getElementById('question3');
+                        const myDiv2 = document.getElementById('question4');
+                        const myDiv3 = document.getElementById('question5');
+                        const myDiv4 = document.getElementById('question6');
+                        const myDiv5 = document.getElementById('question7');
+
+                        // Add an event listener to the form
+                        form.addEventListener('change', function() {
+                        // Get the selected value
+                        const selectedValue = document.querySelector('input[name="q2"]:checked').value;
+
+                        // Check the selected value and hide/show the div accordingly
+                        if (selectedValue === 'Laptop') {
+                            myDiv1.style.display = 'block';
+                            myDiv2.style.display = 'block';
+                            myDiv3.style.display = 'none';
+                            myDiv4.style.display = 'none';
+                            myDiv5.style.display = 'none';
+
+                        } else if (selectedValue === 'DesktopPC') {
+                            myDiv3.style.display = 'block';
+                            myDiv4.style.display = 'block';
+                            myDiv1.style.display = 'none';
+                            myDiv2.style.display = 'none';
+                            myDiv5.style.display = 'none';
+                        } else if (selectedValue === 'GamingPC') {
+                            myDiv5.style.display = 'block';
+                        }
+
+                        });
+                    </script>
 
                     <br>
                     <input type="submit" value="Submit Record">
