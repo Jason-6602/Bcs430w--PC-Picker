@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration Page</title>
+    <link rel="stylesheet" href="CreateAccount.CSS">
+</head>
+<body>
+
+<h2>Create an Account!</h2>
+
+<script>
+    window.onload = function() {
+      document.getElementById('password').value = '';
+    };
+</script>
+
+<form action="registrationprocess.php" method="post">
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" required><br>
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+
+    <label for="user_name">Username:</label>
+    <input type="text" id="user_name" name="user_name" required><br>
+
+    <input type="submit" value="Register">
+</form>
+</body>
+</html>
