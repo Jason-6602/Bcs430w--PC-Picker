@@ -1,10 +1,6 @@
 <?php  
 
-
-    
-
-   
-
+      //Changing the test comment again
       require_once 'logindb.php';
       $connection = new mysqli($hn, $un, $pw, $db);
  
@@ -18,7 +14,7 @@
 
     $username = mysql_fix_string($connection,$_POST['username']);
     $password  = mysql_fix_string($connection,$_POST['password']);
-    $query   = "SELECT * FROM users WHERE username='$username'";
+    $query   = "SELECT * FROM user WHERE user_name='$username'";
     $result  = $connection->query($query);
 
     if (!$result) die("User not found");
@@ -28,13 +24,12 @@
 
       $result->close();
 
-      if (password_verify($password, $row[1]))   {
+      if (password_verify($password, $row[4]))   {
         session_start();
-        $_SESSION['username'] = $row[0];
-        $_SESSION['password']= $row[1];
-        echo htmlspecialchars("You are now logged in as '$row[0]'");
-        die("<p><a href='../Menu.'>Click here to continue</a></p>");
-
+        $_SESSION['username'] = $row[5];
+        $_SESSION['password']= $row[4];
+        echo htmlspecialchars("You are now logged in as '$row[1]' '$row[2]' ");
+        die("<p><a href='../home/index.html'>Click here to continue</a></p>");
       }
       else echo("Invalid username/password combination");
       echo"<p><a href='login.html'>Return to Login</a></p>";
