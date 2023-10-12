@@ -1,7 +1,7 @@
 <?php // login.php
       // Change these details to suit your installation
   $hn = 'localhost';
-  $db = 'bcs350sp23';
+  $db = 'bcs430w;
   $un = 'root';
   $pw = 'mysql';
 ?>

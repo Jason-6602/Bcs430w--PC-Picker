@@ -7,17 +7,17 @@
 </head>
 <body>
 
-    <?php
-        // If user is not logged in, return to registration page...
-        //Testing new branch
+<!--    <?php-->
+<!--        // If user is not logged in, return to registration page...-->
+<!--        //Testing new branch-->
 
-        session_start();
-        if(!isset($_SESSION['username'])) {
-            echo "You are not logged in, please return to registration page";
+<!--        session_start();-->
+<!--        if(!isset($_SESSION['username'])) {-->
+<!--            echo "You are not logged in, please return to registration page";-->
 
-            echo '<p> <a href="../login/login.html">Return to Login</a> </p>';
-        }
-    ?>
+<!--            echo '<p> <a href="../login/login.html">Return to Login</a> </p>';-->
+<!--        }-->
+<!--    ?>-->
 
     <div id="container">
 
@@ -50,7 +50,7 @@
                 Text field Forms - Need to add user survey to find out what kind of PC they require
                 -->
                 <h2> Please fill out the Survey below: </h2>
-                <form id="myForm" method="post" action="addrecords.php">
+                <form id="myForm" method="POST" action="addrecords.php">
 
                     <div id="question1">
                         <fieldset>
@@ -58,19 +58,19 @@
                             <p>We’ll do our best to find the best matching computer for the price you’re looking for.</p>
 
                             <label>
-                                <p><input type="radio" name="q1" value="300$">My budget is 300$, or less.</p>
+                                <p><input type="radio" name="q1" value="300">My budget is 300$, or less.</p>
                             </label><br>
 
                             <label>
-                                <p><input type="radio" name="q1" value="500$">My budget is 500$, or less.</p>
+                                <p><input type="radio" name="q1" value="500">My budget is 500$, or less.</p>
                             </label><br>
 
                             <label>
-                                <p><input type="radio" name="q1" value="1000$">My budget is 1000$, or less.</p>
+                                <p><input type="radio" name="q1" value="1000">My budget is 1000$, or less.</p>
                             </label><br>
 
                             <label>
-                                <p><input type="radio" name="q1" value="1500$">My budget is 1500$, or less.</p>
+                                <p><input type="radio" name="q1" value="1500">My budget is 1500$, or less.</p>
                             </label><br>
 
                             <label>
