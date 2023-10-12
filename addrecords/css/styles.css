@@ -88,3 +88,7 @@ footer p a {
     text-decoration: none;
 }
 
+/* Hide questionnaire questions */
+#question3, #question4, #question5, #question6, #question7 {
+    display: none;
+}
