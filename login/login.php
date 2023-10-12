@@ -1,14 +1,14 @@
-<?php  
+<?php
 
       //Changing the test comment again
       require_once 'logindb.php';
       $connection = new mysqli($hn, $un, $pw, $db);
- 
+
       if ($connection->connect_error) die("Unable to Connect to database"); // database connection
 
   $username = $password =  "";
 
-  //Fix_String used to sanitize user input . 
+  //Fix_String used to sanitize user input .
 
   if (isset($_POST['username']) && isset($_POST['password'])){
 
@@ -33,7 +33,7 @@
       }
       else echo("Invalid username/password combination");
       echo"<p><a href='login.html'>Return to Login</a></p>";
-      
+
     }
     else echo("Invalid username/password combination");
     echo"<p><a href='login.html'>Return to Login</a></p>";
@@ -50,7 +50,7 @@
   function mysql_entities_fix_string($connection, $string)
   {
     return htmlentities(mysql_fix_string($connection, $string));
-  }	
+  }
 
   function mysql_fix_string($connection, $string)
   {
@@ -61,7 +61,7 @@
 
 
 
- 
-  
- 
+
+
+
 ?>
