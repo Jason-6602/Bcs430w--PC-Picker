@@ -1,6 +1,10 @@
 <?php  
-      // BCS430w- Login page
-      //testlogin123 -Mytest123
+
+
+    
+
+   
+
       require_once 'logindb.php';
       $connection = new mysqli($hn, $un, $pw, $db);
  
