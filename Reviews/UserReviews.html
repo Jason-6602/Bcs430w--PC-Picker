@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="Reviews.CSS">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Review Form</title>
+
+
+
+</head>
+<body>
+
+<header>
+    <a href="index.html"><img src="../login/companylogo.jpg" class="Logo"></a>
+    <h1>Leave a Review!</h1>
+    <nav>
+        <ul>
+            <li><a href="../home/index.html">Home</a></li>
+            <li><a href="../addrecords/addrecordsform.html">PC Part Tool</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="../CreateAccount/CreateAccount.html">Create New Account</a></li>
+            <li><a href="../login/login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<div class="form-container">
+    <form id="reviewForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Very Good</option>
+            <option value="3">3 - Good</option>
+            <option value="2">2 - Fair</option>
+            <option value="1">1 - Poor</option>
+        </select>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" required></textarea>
+
+        <button type="submit">Submit Review</button>
+    </form>
+</div>
+
+
+<script>
+    document.getElementById("reviewForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        alert("Review submitted successfully!");
+    });
+</script>
+
+</body>
+</html>
