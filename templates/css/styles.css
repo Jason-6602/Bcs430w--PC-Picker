@@ -1,0 +1,359 @@
+/* CSS Reset */
+body, header, nav, nav ul, nav li, main, footer, h1, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Body Styles */
+body {
+    background-color: #000;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Header Styles */
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 190px;
+	background-color: #000;
+}
+
+header img {
+    margin: 0 auto;
+	border-radius: 10px;
+	height: 180px;
+}
+
+/* Nav Menu Styles */
+nav {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.15em;
+    font-family: 'Francois One', sans-serif;
+    border-top: 1px solid #fff;
+}
+
+nav li:first-child {
+    border-top: none;
+}
+
+nav li a {
+	display: block;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+#hero-img {
+    max-width: 100%;
+}
+
+/* Main Styles */
+main {
+    background-color: #000;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: 'Roboto Slab', serif;
+}
+
+.reviews {
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.childreview {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 1.25em 1.25gem;
+}
+
+.childreview img {
+    width: 10%;
+    padding: 1em;
+}
+
+#survey-form {
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+#survey-form h1, h2, label, p{
+	text-align: center;
+}
+
+#survey-form p {
+	font-size: 0.85em;
+}
+
+#survey-form fieldset {
+	margin-top: 2%;
+	border-radius: 5px;
+}
+
+#survey-form .submit-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2%;
+	padding-bottom: 2%;
+}
+
+input[type="submit"] {
+	font-size: 0.85em;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	font-size: 1.25em;
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+}
+
+/* Hide Survey Classes As Needed */
+#question3, #question4, #question5, #question6, #question7 {
+	display: none;
+} 
+
+/* Result CSS */
+#results {
+	margin-left: 1%;
+	margin-right: 1%;
+	padding: 0;
+	color: #000;
+	text-align: center;
+}
+
+#result-text {
+	color: #fff;
+}
+
+#result-card {
+	background-color: #D3D3D3;
+	border-radius: 5px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+	margin-bottom: 10px;
+}
+
+#result-card h2 {
+	color: #000;
+}
+
+#result-card img {
+	max-width: 75%;
+	border-radius: 5px;
+	padding-left: 13%;
+	padding-top: 2%;
+}
+
+#result-card p {
+	font-size: 1.30em;
+}
+
+#result-card ul {
+	list-style-type: none;
+	border: 3px solid #000;
+	border-color: red;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+}
+
+#result-card li {
+	text-align: center;
+}
+
+#result-card li a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	border: 3px solid #000;
+	border-radius: 5px;
+	padding: 2%;
+}
+
+#result-card li a:hover {
+	background-color: black;
+	color: white;
+	font-size: 1.15em;
+}
+
+
+/* Footer Styles */
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 845px), print {
+	
+	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+	.tablet-desktop {
+		display: block;
+	}
+	
+	.mobile {
+		display: none;
+	}
+	
+	/* Tablet Viewport: Style rule for header */
+	header {
+		position: static;
+		padding-bottom: 2%
+	}
+	
+	/* Tablet Viewport: Style rules for nav area */
+	nav li {
+		border-top: none;
+		display: inline-block;
+		border-right: 1px solid #fff;
+	}
+	
+	nav li:last-child {
+		border-right: none;
+	}
+	
+	nav li a {
+		padding: 0.1em 0.75em;
+	}
+	
+	/* Tablet Viewport: Style rules for main content area */
+	main ul {
+		margin: 0 0 4% 10%;
+	}
+	
+	#result-card img {
+		padding-left: 25%;
+	}
+	
+	#result-card li a {
+		padding: 1%;
+	}
+	
+	#result-card ul {
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1420px), print  {
+	
+	/* Desktop Viewport: Style rule for header */
+	header {
+		width: 25%;
+		float: left;
+		padding-bottom: 0;
+	}
+	
+	/* Desktop Viewport: Style rules for nav area */
+	nav {
+		float: right;
+		width: 70%;
+		margin: 4em 1em 0 0;
+	}
+	
+	nav ul {
+		text-align: right;
+	}
+	
+	nav li {
+		border: none;
+	}
+	
+	nav li a {
+		padding: 0.5em 1em;
+	}
+	
+	nav li a:hover {
+		color: #000;
+		background-color: #fff;
+	}
+	
+	#results {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 10px;
+	}
+	
+	#result-card img {
+		padding-left: 12%;
+	}
+	
+	#result-card li {
+		padding-right: 10%;
+	}
+	
+	#result-card li a {
+		padding: 1%;
+	}
+	
+	#result-card ul {
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	
+	/* Desktop Viewport: Style rules for main content */
+	main {
+		clear: left;
+	}
+	
+	main h1 {
+		font-size: 1.8em;
+	}
+	
+	#survey-form {
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	#survey-form #question1, #question2, #question3, #question4, #question5, #question6, #question7 {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+	
+	#container {
+		width: 1920px;
+		margin: 0 auto;
+	}
+	
+}
+
