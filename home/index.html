@@ -26,13 +26,17 @@
             </ul>
         </nav>
 
+
+
         <div id="hero-img">
             <img src="heroimg.jpg" alt="Hero Image for Home Page">
         </div>
 
 
         <main>
-            <div class="reviews">
+
+            <div id="reviewsContainer" class="reviews">
+
                 <div class="childreview">
                     <img src="reviewimg.png" alt="Review Image"> <p>Insert Reviews Here</p>
                 </div>
@@ -41,6 +45,8 @@
                     <img src="reviewimg.png" alt="Review Image"> <p>Insert Reviews Here</p>
                 </div>
             </div>
+
+
         </main>
 
         <footer>
@@ -49,6 +55,35 @@
         </footer>
 
     </div>
+
+    <script>
+        // Function to display reviews on the homepage
+        function displayReviews(reviews) {
+            const reviewsContainer = document.getElementById("reviewsContainer");
+
+            // Generate HTML for each review and append it to the container
+            reviews.forEach(review => {
+                const reviewHTML = `
+                    <div class="childreview">
+                        <img src="reviewimg.png" alt="Review Image"> <p>${review.comments}</p>
+                    </div>
+                `;
+                reviewsContainer.innerHTML += reviewHTML;
+            });
+        }
+
+        // Fetch reviews from the server using AJAX
+        const xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (this.readyState === 4 && this.status === 200) {
+                const reviews = JSON.parse(this.responseText);
+                displayReviews(reviews);
+            }
+        };
+        // Adjust the path to match the location of your PHP script
+        xhr.open("GET", "Reviews/submitreview.php", true);
+        xhr.send();
+    </script>
 
 </body>
 </html>
