@@ -1,6 +1,6 @@
 <?php  
 
-      //Changing the test comment again
+
       require_once 'logindb.php';
       $connection = new mysqli($hn, $un, $pw, $db);
  
