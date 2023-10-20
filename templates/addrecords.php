@@ -20,10 +20,10 @@
 	<ul>
 	<li><a href="index.html">Home</a></li>
 	<li><a href="addrecordsform.html">PC Part Tool</a></li>
-	<li><a href="">Leave a Review!</a></li>
+	<li><a href="userreviews.html">Leave a Review!</a></li>
 	<li><a href="">About Us</a></li>
 	<li><a href="">Contact Us</a></li>
-	<li><a href="">Create New Account</a></li>
+	<li><a href="createaccount.html">Create New Account</a></li>
 	<li><a href="login.html">Login</a></li>
 	</ul>
 	</nav>
@@ -80,10 +80,12 @@
 					$price = htmlspecialchars($result->fetch_assoc()['price']);
 					$result->data_seek($i);
 					$url = htmlspecialchars($result->fetch_assoc()['url']);
+					$result->data_seek($i);
+					$image_path = htmlspecialchars($result->fetch_assoc()['image_path']);
 					
 					echo <<<_END
 					<div id="result-card">
-					<a href="$url" target=_blank><img src="../resources/result-card-image.jpg" alt="Result Card Image"></a>
+					<a href="$url" target=_blank><img src="$image_path" alt="Result Card Image"></a>
 					<h2>Make: $make</h2>
 					<ul>
 					<li><p>$name</p></li>
@@ -120,7 +122,11 @@
 				$ans3 = $_POST['q3'];
 				$ans4 = $_POST['q4'];
 				
-				echo "From the selection you provided, you are recommended the following options:<br>";
+				echo "<h2 id='result-text'>From the selection you provided, you are recommended the following options:<br></h2><br>";
+				
+				echo <<<_END
+				<div id="results">
+				_END;
 				
 				for ($i = 0; $i < $numRows; ++$i) {
 					$result->data_seek($i);
@@ -131,12 +137,25 @@
 					$price = htmlspecialchars($result->fetch_assoc()['price']);
 					$result->data_seek($i);
 					$url = htmlspecialchars($result->fetch_assoc()['url']);
+					$result->data_seek($i);
+					$image_path = htmlspecialchars($result->fetch_assoc()['image_path']);
 					
-					echo "<br> Make: $make <br>";
-					echo "Name: $name <br>";
-					echo "Price: $price <br>";
-					echo "URL: $url; <br><br>";
+					echo <<<_END
+					<div id="result-card">
+					<a href="$url" target=_blank><img src="$image_path" alt="Result Card Image"></a>
+					<h2>Make: $make</h2>
+					<ul>
+					<li><p>$name</p></li>
+					<li><p>$price</p></li>
+					<li><p><a href="$url" target=_blank>Link</a></p></li>
+					</ul>
+					</div>
+					_END;
 				}
+				
+				echo <<<_END
+				</div>
+				_END;
 			}
 		}
 	}

@@ -204,6 +204,34 @@ input[type="submit"]:hover {
 	font-size: 1.15em;
 }
 
+/* Login Page */
+.login {
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+}
+
+.createaccount {
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10%;
+}
+
+.form-container {
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+}
+
+.form-container label, input, select{
+	margin-top: 20px;
+}
+
+.form-container textarea {
+	margin-top: 30px;
+}
 
 /* Footer Styles */
 footer p {
@@ -258,6 +286,7 @@ footer p a {
 	
 	#result-card img {
 		padding-left: 25%;
+		max-width: 50%;
 	}
 	
 	#result-card li a {
@@ -267,6 +296,25 @@ footer p a {
 	#result-card ul {
 		margin-left: 15%;
 		margin-right: 15%;
+	}
+	
+	.login {
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+	
+	.createaccount {
+		padding-top: 10px;
+		padding-bottom: 5%;
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+	
+	.form-container {
+		padding-top: 10px;
+		padding-bottom: 5%;
+		margin-left: 20%;
+		margin-right: 20%;
 	}
 }
 
@@ -344,6 +392,25 @@ footer p a {
 	#survey-form #question1, #question2, #question3, #question4, #question5, #question6, #question7 {
 		padding-left: 10%;
 		padding-right: 10%;
+	}
+	
+	.login {
+		margin-left: 30%;
+		margin-right: 30%;
+	}
+	
+	.createaccount {
+		padding-top: 10px;
+		padding-bottom: 40px;
+		margin-left: 30%;
+		margin-right: 30%;
+	}
+	
+	.form-container {
+		padding-top: 10px;
+		padding-bottom: 40px;
+		margin-left: 30%;
+		margin-right: 30%;
 	}
 }
 
