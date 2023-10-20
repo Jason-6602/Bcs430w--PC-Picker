@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PC Parts Picker Tool</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Francois+One|Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="container">
+
+        <header>
+            <a href="index.html"><img src="../resources/companylogo.png" alt="PC Parts Logo"></a>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="addrecordsform.html">PC Part Tool</a></li>
+                <li><a href="userreviews.html">Leave a Review!</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="createaccount.html">Create New Account</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <div id="hero-img" class="tablet-desktop">
+            <!-- Empty -->
+        </div>
+
+
+        <main>
+			
+			<div class="createaccount">
+				<form action="registrationprocess.php" method="post">
+					<h2>Create An Account!</h2>
+					<label for="first_name">First Name:</label>
+					<input type="text" id="first_name" name="first_name" required><br>
+
+					<label for="last_name">Last Name:</label>
+					<input type="text" id="last_name" name="last_name" required><br>
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required><br>
+
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password" required><br>
+
+					<label for="user_name">Username:</label>
+					<input type="text" id="user_name" name="user_name" required><br>
+
+					<input class="submitbutton" type="submit" value="Register">
+				</form>
+				
+				<script>
+					window.onload = function() {
+					  document.getElementById('password').value = '';
+					};
+				</script>
+			</div>
+
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2021. All Rights Reserved.</p>
+            <p><a href="mailto:pcparts@picker.com">PCparts@picker.com</a><p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

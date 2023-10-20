@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>PC Parts Picker Tool</title>
+    <title>SelectSpec</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,10 +19,10 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="addrecordsform.html">PC Part Tool</a></li>
-                <li><a href="">Leave a Review!</a></li>
+                <li><a href="userreviews.html">Leave a Review!</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Contact Us</a></li>
-                <li><a href="">Create New Account</a></li>
+                <li><a href="createaccount.html">Create New Account</a></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
@@ -33,14 +33,8 @@
 
 
         <main>
-            <div class="reviews">
-                <div class="childreview">
-                    <img src="../resources/reviewimg.png" alt="Review Image"> <p>Insert Reviews Here</p>
-                </div>
-
-                <div class="childreview">
-                    <img src="../resources/reviewimg.png" alt="Review Image"> <p>Insert Reviews Here</p>
-                </div>
+            <div id="reviewscontainer" class="reviews">
+				<!-- Script will fill in -->
             </div>
         </main>
 
@@ -50,6 +44,36 @@
         </footer>
 
     </div>
+	
+	<script>
+        // Function to display reviews on the homepage
+        function displayReviews(reviews) {
+            const reviewsContainer = document.getElementById("reviewscontainer");
+
+            // Generate HTML for each review and append it to the container
+            reviews.forEach(review => {
+                const reviewHTML = `
+					
+					<div class="childreview">
+                    <img src="../resources/reviewimg.png" alt="Review Image"> <p>${review.comments}</p>
+					</div>
+                `;
+                reviewsContainer.innerHTML += reviewHTML;
+            });
+        }
+
+        // Fetch reviews from the server using AJAX
+        const xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (this.readyState === 4 && this.status === 200) {
+                const reviews = JSON.parse(this.responseText);
+                displayReviews(reviews);
+            }
+        };
+        // Adjust the path to match the location of your PHP script
+        xhr.open("GET", "getreviews.php", true);
+        xhr.send();
+    </script>
 
 </body>
 </html>
