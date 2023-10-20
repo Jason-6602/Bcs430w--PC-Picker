@@ -31,8 +31,10 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="addrecordsform.html">PC Part Tool</a></li>
+                <li><a href="userreviews.html">Leave a Review!</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Contact Us</a></li>
+                <li><a href="createaccount.html">Create New Account</a></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
@@ -115,7 +117,7 @@
 								</label>
 
 								<label>
-									<p><input type="radio" name="q2" value="GamingPC">Gaming: A multipurpose computer is used for a wide range of tasks, including work, entertainment, education, gaming, communication,
+									<p><input type="radio" name="q4" value="GamingPC">Gaming: A multipurpose computer is used for a wide range of tasks, including work, entertainment, education, gaming, communication,
 										and general computing needs, providing versatility for various user requirements.</p>
 								</label>
 
@@ -173,7 +175,7 @@
 								</label>
 
 								<label>
-									<p><input type="radio" name="q2" value="GamingPC">Gaming : A multipurpose computer is used for a wide range of tasks, including work, entertainment, education, gaming, communication,
+									<p><input type="radio" name="q6" value="GamingPC">Gaming : A multipurpose computer is used for a wide range of tasks, including work, entertainment, education, gaming, communication,
 										and general computing needs, providing versatility for various user requirements.</p>
 								</label>
 
@@ -235,18 +237,47 @@
 								myDiv3.style.display = 'none';
 								myDiv4.style.display = 'none';
 								myDiv5.style.display = 'none';
+								
+								form.addEventListener('change', function() {
+									// Get the selected value
+									const selectedValue = document.querySelector('input[name="q4"]:checked').value;
 
+									// Check the selected value and hide/show the div accordingly
+									if (selectedValue === 'GamingPC') {
+										myDiv5.style.display = 'block';
+									}
+									
+									else {
+										myDiv5.style.display = 'none';
+									}
+								});
+								
 							} else if (selectedValue === 'DesktopPC') {
 								myDiv3.style.display = 'block';
 								myDiv4.style.display = 'block';
 								myDiv1.style.display = 'none';
 								myDiv2.style.display = 'none';
 								myDiv5.style.display = 'none';
-							} else if (selectedValue === 'GamingPC') {
-								myDiv5.style.display = 'block';
-							}
+								
+								form.addEventListener('change', function() {
+									// Get the selected value
+									const selectedValue = document.querySelector('input[name="q6"]:checked').value;
 
+									// Check the selected value and hide/show the div accordingly
+									if (selectedValue === 'GamingPC') {
+										myDiv5.style.display = 'block';
+									}
+									
+									else {
+										myDiv5.style.display = 'none';
+									}
+								});
+								
+							}
 							});
+							
+							// Add an event listener to the form
+							
 						</script>
 
 						<div class="submit-button">
