@@ -35,14 +35,16 @@
         <main>
             <div id="reviewsContainer" class="reviews">
 
-                <div class="childreview">
-                    <img src="../resources/reviewimg.png" alt="Review Image"> <p>Insert Reviews Here</p>
-                </div>
+                <div id="loading">Loading...</div>
 
                 <div class="childreview">
                     <img src="../resources/reviewimg.png" alt="Review Image"> <p>Insert Reviews Here</p>
                 </div>
 
+                <div class="childreview">
+                    <img src="../resources/reviewimg.png" alt="Review Image"> <p>Insert Reviews Here</p>
+                </div>
+            </div>
         </main>
 
         <footer>
@@ -51,36 +53,57 @@
         </footer>
 
     </div>
-	
-	<script>
+
+    <script>
         // Function to display reviews on the homepage
         function displayReviews(reviews) {
-            const reviewsContainer = document.getElementById("reviewscontainer");
+            const reviewsContainer = document.getElementById("reviewsContainer");
+
+            // Clear existing content
+            reviewsContainer.innerHTML = '';
 
             // Generate HTML for each review and append it to the container
             reviews.forEach(review => {
                 const reviewHTML = `
-					
-					<div class="childreview">
-                    <img src="../resources/reviewimg.png" alt="Review Image"> <p>${review.comments}</p>
-					</div>
+                    <div class="childreview">
+                        <img src="reviewimg.png" alt="Review Image"> <p>${review.comments}</p>
+                    </div>
                 `;
                 reviewsContainer.innerHTML += reviewHTML;
             });
+
+            // Hide the loading indicator
+            const loadingIndicator = document.getElementById("loading");
+            if (loadingIndicator) {
+                loadingIndicator.style.display = "none";
+            }
         }
 
         // Fetch reviews from the server using AJAX
         const xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function() {
-            if (this.readyState === 4 && this.status === 200) {
-                const reviews = JSON.parse(this.responseText);
-                displayReviews(reviews);
+        xhr.onreadystatechange = function () {
+            if (this.readyState === 4) {
+                if (this.status === 200) {
+                    const reviews = JSON.parse(this.responseText);
+                    displayReviews(reviews);
+                } else {
+                    // Add more detailed error handling
+                    console.error("Error fetching reviews. Status code: " + this.status);
+                }
             }
         };
+
+        // Show the loading indicator before making the request
+        const loadingIndicator = document.getElementById("loading");
+        if (loadingIndicator) {
+            loadingIndicator.style.display = "block";
+        }
+
         // Adjust the path to match the location of your PHP script
         xhr.open("GET", "getreviews.php", true);
         xhr.send();
     </script>
+
 
 </body>
 </html>

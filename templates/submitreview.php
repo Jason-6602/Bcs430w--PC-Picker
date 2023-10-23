@@ -12,13 +12,15 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+
+
 // Prepare and bind
-$stmt = $conn->prepare("INSERT INTO reviews (first_name, last_name, email, rating, comments) VALUES (?, ?, ?, ?, ?)");
-$stmt->bind_param("sssis", $first_name, $last_name, $email, $rating, $comments);
+$stmt = $conn->prepare("INSERT INTO reviews (first_name,last_name, email, rating, comments) VALUES (?, ?, ?, ?,?)");
+$stmt->bind_param("sssis", $first_name,$last_name, $email, $rating, $comments);
 
  //Set parameters
- $first_name = $_POST['firstname'];
- $last_name = $_POST['lastname'];
+ $first_name = $_POST['first_name'];
+ $last_name = $_POST['last_name'];
  $email = $_POST['email'];
  $rating = $_POST['rating'];
  $comments = $_POST['comments'];
@@ -26,7 +28,7 @@ $stmt->bind_param("sssis", $first_name, $last_name, $email, $rating, $comments);
 
 
 // Output values for debugging
-var_dump($first_name, $last_name, $email, $rating, $comments);
+var_dump($first_name,$last_name, $email, $rating, $comments);
 
 // Execute statement and handle errors
 if ($stmt->execute()) {
